@@ -1,0 +1,47 @@
+﻿@model Dictionary<string, string>;
+
+<html>
+    <head>
+        @* <link rel="stylesheet" href="~/css/EditCookie.css"/> *@
+    </head>
+    <body>
+        <div class="cookie">
+            <div>
+                <h1>Cookie</h1>
+            </div>
+
+            <div>
+                <form class="create-cookie" asp-action="CreateCookie" asp-controller="DZCookie">
+                <input name="name" placeholder="name">
+                <input name="value" placeholder="value">
+                <button type="submit" class="btn btn-primary">Create cookie</button>
+                </form>
+            </div>
+            <div>
+                <h2>Просмотр</h2>
+
+                <ul>
+                    @foreach(var item in @Model)
+                    {
+                        <li>
+                            @item.Key - @item.Value
+                        </li>
+                    }
+                </ul>
+            </div>
+            <div>
+                <form class="edit-cookie" asp-action="EditCookieRdt" asp-controller="DZCookie">
+                <input name="name" placeholder="name">
+                <input name="value" placeholder="value">
+                <button type="submit" class="btn btn-primary">Edit cookie</button>
+                </form>
+            </div>
+            <div>
+                <form class="delete-cookie" asp-action="DeleteCookie" asp-controller="DZCookie">
+                <input name="name" placeholder="name">
+                <button type="submit" class="btn btn-primary">Delete cookie</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

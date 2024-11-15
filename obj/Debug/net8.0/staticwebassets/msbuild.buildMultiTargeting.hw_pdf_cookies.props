@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/hw_pdf_cookies.props" />
+</Project>

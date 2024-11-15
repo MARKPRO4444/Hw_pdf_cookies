@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "hw_pdf_cookies/1.0.0": {
+        "runtime": {
+          "hw_pdf_cookies.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "hw_pdf_cookies/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
